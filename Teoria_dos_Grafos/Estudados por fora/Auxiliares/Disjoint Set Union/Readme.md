@@ -2,7 +2,7 @@
 
 ## Sobre
 
-Conhecida como Union Find por conta das suas duas principais funções ``find_set(a)`` e ``union_sets(a,b)`` que são responsáveis por retornar o vétice representante na arvore do elemento ``a`` e unir dois conjuntos onde o conjunto ``A`` é onde está localizado ``a`` e o conjunto ``B`` é onde está localizado ``b``, respectivamente. É fácil ver que se ``a`` e ``b`` estão no mesmo conjunto ``find_set(a)`` e ``find_set(b)`` retornaram o mesmo representante. 
+Conhecida como Union Find por conta das suas duas principais funções ``find_set(a)`` e ``union_sets(a,b)`` que são responsáveis por retornar o vétice representante na arvore do elemento ``a`` e unir dois conjuntos onde o conjunto ``A`` é onde está localizado ``a`` e o conjunto ``B`` é onde está localizado ``b``, respectivamente, a estrutura de dados DSU é muito utilizada na área de teoria dos Grafos. Como abordado anteriormente, é fácil ver que se ``a`` e ``b`` estão no mesmo conjunto ``find_set(a)`` e ``find_set(b)`` retornaram o mesmo representante, o que pode ser de grande ajuda, como veremos no exemplo mais a frente.
 
 A função ``find_set`` também utiliza de uma otimização conhecida como ``path compression`` ou compressão de caminho no bom e velho português. Quando você chama a função ``find_set`` para um elemento, ela percorre o caminho do elemento até o representante (ou “pai”) do conjunto. Sem compressão de caminho, cada chamada para ``find_set`` teria que percorrer esse caminho novamente. A compressão de caminho otimiza isso, fazendo com que cada elemento no caminho aponte diretamente para o representante do conjunto. Assim, futuras chamadas de ``find_set`` para esses elementos serão muito mais rápidas, pois o caminho para o representante do conjunto foi “comprimido”.
 
