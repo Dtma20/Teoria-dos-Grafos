@@ -2,9 +2,9 @@
 
 ## Descrição
 
-Uma heap é um tipo especial de árvore binária completa ou quase completa, que segue a regra de que o valor dos seus nós devem ser maior ou igual ou menor ou igual ao valor de seu nó pai dependo da sua implementação ser mínima ou máxima.
+Uma heap é um tipo especial de árvore binária completa ou quase completa, que segue a regra de que o valor dos seus nós devem ser maior ou igual ou menor ou igual ao valor de seu nó pai dependo da sua implementação ser máxima ou mínima.
 
-No algoritimo de Dijkstra, se é utilizado uma fila de prioridade com ```heap minima``, de forma com que a raiz da árvore sempre seja o menor valor. Como no mesmo utilizamos tanto a extração do menor valor e o relachamento das arestas, que podem ser realizados em tempos constante e logarítimico, respectivamente, pela estrutura de dados, não se pode negar que a estrutura caí como uma luva na implementação do algoritmo.
+No algoritimo de Dijkstra, se é utilizado uma fila de prioridade com ```heap mínima``, de forma com que a raiz da árvore sempre seja o menor valor. Como no mesmo utilizamos tanto a extração do menor valor e o relachamento das arestas, que podem ser realizados em tempos constante e logarítimico, respectivamente, pela estrutura de dados, não se pode negar que a estrutura caí como uma luva na implementação do algoritmo.
 
 Exemplo: 
 
