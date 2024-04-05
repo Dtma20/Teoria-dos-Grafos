@@ -37,13 +37,3 @@ void union_sets(int a, int b) {
             ranks[a]++;
     }
 }
-int main() {
-    for(int i = 0; i < parent.size(); i++) {
-        make_set(i);
-    }
-    union_sets(1, 2);
-    union_sets(2, 3);
-    union_sets(3, 4);
-    cout << find_set(2) << endl;
-    return 0;
-}
